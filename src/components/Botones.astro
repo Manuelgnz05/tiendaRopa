@@ -1,0 +1,64 @@
+<div class="botones">
+    <a href="./paginas/seleccion.html" class="enlace1">
+        <button class="boton1">Log in</button>
+    </a>
+    <a href="./paginas/seleccion.html" class="enlace2">
+        <button class="boton2">
+            <img src="../../public/logo_google.png" alt="google" class="imagen_google">
+            <p>Login with Google</p>
+        </button>
+    </a> 
+</div>
+
+
+<style>
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+
+    .boton1{
+        padding: 15px;
+        background-color: green;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 20px;
+        width: 100%;
+        cursor: pointer;
+        height: 50px;
+    }
+
+    .boton2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        gap: 15px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .enlace1{
+        text-decoration: none;
+        display: flex;
+        gap: 40px;
+    }
+
+    .enlace2{
+        text-decoration: none;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        color: gray;
+    }
+
+    .imagen_google{
+        object-fit: contain;
+    }
+</style>

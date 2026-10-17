@@ -1,0 +1,36 @@
+---
+interface Props {
+  texto: string;
+}
+
+const { texto } = Astro.props;
+---
+
+<div class="user">
+    <form action="iniciar" class="iniciar">
+        <input type="text" placeholder="User" class="texto">
+
+    </form>
+</div>
+
+<style>
+    
+    .user{
+        width: 30vw;
+    }
+
+    .user form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto{
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: rgb(224, 224, 224);
+        border-radius: 5px;
+        border: 1px solid gray;
+        font-size: 15px;
+    }
+
+</style>
