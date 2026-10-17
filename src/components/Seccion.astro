@@ -1,0 +1,46 @@
+---
+interface Props {
+  texto: string;
+  imagenBg: string;
+  enlace: string;
+}
+
+const { texto, imagenBg, enlace } = Astro.props;
+---
+
+
+<div class="foto" style={`background-image: url(${imagenBg});`}>
+    <a href= {enlace} class="enlace">
+        <h2 class="texto">{texto}</h2>
+    </a>
+</div>
+
+
+<style>
+    .foto{
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 100vh;
+        font-size: 50px;
+    }
+
+    .texto{
+        color: white;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        font-weight: 900;
+        font-size: 100px;
+    }
+
+    .texto:hover{
+        font-size: 120px;
+        color: rgb(211, 209, 209);
+    }
+
+    .enlace{
+        text-decoration: none;
+    }
+</style>

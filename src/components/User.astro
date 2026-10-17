@@ -1,15 +1,18 @@
 ---
 interface Props {
   texto: string;
+  tipo?: 'text' | 'password';
 }
 
-const { texto } = Astro.props;
+const {
+    texto, 
+    tipo = 'text'
+} = Astro.props;
 ---
 
 <div class="user">
     <form action="iniciar" class="iniciar">
-        <input type="text" placeholder="User" class="texto">
-
+        <input type= {tipo} placeholder= {texto} class="texto">
     </form>
 </div>
 

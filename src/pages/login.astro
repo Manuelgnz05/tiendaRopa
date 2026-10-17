@@ -10,8 +10,8 @@ import Imagen from '../components/Imagen.astro';
   <div class="formulario">
     <Titulo />
     <div>
-        <User />
-        <User />
+        <User texto='user' tipo='text'/>
+        <User texto='password' tipo='password'/>
     </div>
     <Botones />
   </div>
@@ -27,12 +27,6 @@ import Imagen from '../components/Imagen.astro';
         justify-content: space-around;
         padding-bottom: 20px;
         padding-top: 20px;
-    }
-
-    .imagen {
-        width: 60vw;
-        height: 100vh;
-        object-fit: cover;
     }
     
 </style>
