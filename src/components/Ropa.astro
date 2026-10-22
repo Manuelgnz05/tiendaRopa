@@ -1,0 +1,95 @@
+<div class="padre-menu" id="ropa">
+    <div class="menu-ropa">
+        <div class="busc">
+            <img src="../../public/logo_marca.png" alt="logo" class="imagen">
+            <form action="buscar" class="buscar">
+                <img src="../../public/lupa.png" alt="lupa" class="lupa">
+                <input type="search" placeholder="Buscar">
+            </form>
+        </div>
+    </div>
+    <div class="menu-productos">
+        
+    </div>
+</div>
+
+<style>
+    .padre-menu{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .menu-ropa{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .busc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 53%;
+    }
+
+    .imagen{
+        height: 60px;
+    }
+
+    .buscar{
+        border: solid 1px gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .buscar input{
+        border: none;
+    }
+
+    .buscar input:focus{
+        outline: none;
+    }
+
+    .lupa{
+        height: 20px;
+        margin-right: 3px;
+    }
+
+    .menu-productos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        margin-bottom: 80px;
+        color: gray;
+    }
+
+    .producto:hover{
+        cursor: pointer;
+        border: solid 2px gray;
+        border-radius: 20px;
+    }
+
+    .imagen-producto{
+        border-radius: 20px;
+    }
+
+    .precio{
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+</style>

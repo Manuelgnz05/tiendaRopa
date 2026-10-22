@@ -1,0 +1,129 @@
+<header class="cabecera" id = "inicio">
+    <div class="menu">
+        <ul class="parte-menu">
+            <li class="texto-menu"><a href="#inicio">Home</a></li>
+            <li class="texto-menu"><a href="#ropa">Shop</a></li>
+        </ul>
+        <div class="parte2-menu">
+            <a href="../index.html" class="enlace-usuario">
+                <p class="texto-user">User_name</p>
+                <img src="../../public/foto-usuario.png" alt="foto" class="user">
+            </a>
+        </div>
+    </div>
+    <div class="rebajas">
+        <h2>Rebajas</h2>
+        <p>Mirto</p>
+        <div class="porcentajes">
+            <ul class="numeros">
+                <li>-10%</li>
+                <li>-20%</li>
+                <li>-30%</li>
+                <li>-40%</li>
+                <li>-50%</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cabecera{
+        background-image: url(../../public/modelwoman.png);
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        margin-bottom: 30px;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 300px;
+        padding: 30px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .parte-menu{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .enlace-usuario {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .texto-menu{
+        font-size: 20px;
+        font-weight: 800;
+        color: gray;
+        text-transform: uppercase;
+    }
+
+    .texto-menu:nth-of-type(1){
+        border-bottom: 3px gray solid;
+    }
+
+    .texto-menu:hover{
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .texto-user{
+        color: gray;
+        font-size: 20px;
+    }
+
+    .user{
+        width: 6%;
+    }
+
+    .rebajas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+    }
+
+    .rebajas h2{
+        font-size: 90px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .rebajas p{
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+
+    .numeros{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
