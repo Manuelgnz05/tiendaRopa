@@ -1,64 +1,38 @@
 ---
-interface Props {
-  nombre: string;
-  imagen: string;
-  precio: string;
-}
-
-const { nombre, imagen, precio } = Astro.props;
+const { json } = Astro.props;
 ---
-
 
 <article class="product-card">
     <div class="product-card__image-container">
-    <img class="product-card__image" src={imagen} alt="Abrigo largo pliegue espalda">
+        <img class="product-card__image" src={json.imagen} alt="Abrigo largo pliegue espalda">
     </div>
     <div class="product-card__info">
-    <h2 class="product-card__title">{nombre}</h2>
-    <p class="product-card__price">{precio}</p>
+        <h2 class="product-card__title">{json.nombre}</h2>
+        <p class="product-card__price">{json.precio}</p>
     </div>
 </article>
 
 <style>
-    .product-grid {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* Cada tarjeta/columna del producto */
     .product-card {
-      width: 25%;
-      padding-left: 10px;
-      padding-right: 10px;
+      width: 24%;
       display: flex;
       flex-direction: column;
     }
 
-    /* Contenedor de la imagen */
     .product-card__image-container {
-      width: 100%;
-      background-color: #e0e0e0;
       margin-bottom: 16px;
     }
 
-    /* Imagen del producto */
     .product-card__image {
-      display: block;
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
+        display: block;
+        width: 100%;
+        height: auto; 
+        object-fit: contain;
     }
 
-    /* Información del producto */
     .product-card__info {
       text-align: center;
     }
-
-    /* Título / Nombre del producto */
     .product-card__title {
       font-size: 15px;
       font-weight: bold;
@@ -66,8 +40,6 @@ const { nombre, imagen, precio } = Astro.props;
       margin-bottom: 6px;
       line-height: 20px;
     }
-
-    /* Precio del producto */
     .product-card__price {
       font-size: 16px;
       font-weight: bold;

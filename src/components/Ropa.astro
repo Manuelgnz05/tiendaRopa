@@ -1,3 +1,8 @@
+---
+import json from "../data/articulos.json";
+import Articulo from "./Articulo.astro";
+---
+
 <div class="padre-menu" id="ropa">
     <div class="menu-ropa">
         <div class="busc">
@@ -9,7 +14,7 @@
         </div>
     </div>
     <div class="menu-productos">
-        
+        {json.map((contenido) => <Articulo json={contenido}/>)}
     </div>
 </div>
 

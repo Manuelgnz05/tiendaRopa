@@ -4,6 +4,15 @@ import Ropa from '../components/Ropa.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>    
-    <Ropa/>
+<Layout>
+    <div class="main">
+        <Cabecera/>
+        <Ropa/>
+    </div>    
 </Layout>
+
+<style>
+    .main{
+        width: 100vw;
+    }
+</style>
